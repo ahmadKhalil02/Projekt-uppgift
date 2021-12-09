@@ -9,8 +9,8 @@ ul * {
 }
 
 header {
-	background-color: #002A4E;
-    padding: 10px;
+	background-color: #002a4e;
+	padding: 10px;
 	display: grid;
 	grid-template-areas: ' logo left left right ';
 	grid-template-columns: 200px 2fr 1fr;
@@ -28,27 +28,25 @@ header {
 	display: flex;
 	justify-content: start;
 	align-items: center;
-    
 }
 .left li a {
 	color: #fff;
 	text-decoration: none;
-	margin: 0 2rem ;
-    font-size:12px;
-    font-weight: bold;
-    padding: 8px;
+	margin: 0 2rem;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 8px;
 }
 
-.left li a:hover{
-    background-color: #fff;
-    color: #002A4E;
-    border-radius: 3rem;
-   
+.left li a:hover {
+	background-color: #fff;
+	color: #002a4e;
+	border-radius: 3rem;
 }
 
-.left .vertical-line{
-    border-right: 2px solid #fff;
-    height: 1.2rem;
+.left .vertical-line {
+	border-right: 2px solid #fff;
+	height: 1.2rem;
 }
 
 .right {
@@ -62,12 +60,18 @@ header {
 	color: #fff;
 	text-decoration: none;
 	margin: 0 1rem;
-    font-size: 12px;
-    padding: 1rem;
-    font-weight: bold;
+	font-size: 12px;
+	padding: 8px;
+	font-weight: bold;
+}
+
+.right li a:hover {
+	background-color: #fff;
+	color: #002a4e;
+	border-radius: 3rem;
 }
 
 .right .btn {
-    background-color: #3057BC;
-    border-radius: 2rem;
+	background-color: #3057bc;
+	border-radius: 2rem;
 }
