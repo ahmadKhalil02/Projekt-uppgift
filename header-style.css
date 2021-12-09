@@ -1,78 +1,79 @@
 * {
-    
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 ul * {
-	list-style: none;
+  list-style: none;
 }
 
 header {
-	background-color: #002a4e;
-	padding: 10px;
-	display: grid;
-	grid-template-areas: ' logo left left right ';
-	grid-template-columns: 200px 2fr 1fr;
-	grid-template-rows: auto;
+  background-color: #002a4e;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: " logo left left right ";
+  grid-template-columns: 200px 2fr 1fr;
+  grid-template-rows: auto;
 }
 
 .logo {
-	grid-area: logo;
-	margin: 0 3rem;
-	border-radius: 50%;
+  grid-area: logo;
+  margin: 0 3rem;
+  border-radius: 50%;
 }
 
 .left {
-	grid-area: left;
-	display: flex;
-	justify-content: start;
-	align-items: center;
+  grid-area: left;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 .left li a {
-	color: #fff;
-	text-decoration: none;
-	margin: 0 2rem;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 8px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 2rem;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px;
+  letter-spacing: 1px;
 }
 
 .left li a:hover {
-	background-color: #fff;
-	color: #002a4e;
-	border-radius: 3rem;
+  background-color: #fff;
+  color: #002a4e;
+  border-radius: 3rem;
 }
 
 .left .vertical-line {
-	border-right: 2px solid #fff;
-	height: 1.2rem;
+  border-right: 2px solid #fff;
+  height: 1.2rem;
 }
 
 .right {
-	grid-area: right;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  grid-area: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .right li a {
-	color: #fff;
-	text-decoration: none;
-	margin: 0 1rem;
-	font-size: 12px;
-	padding: 8px;
-	font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 12px;
+  padding: 8px;
+  font-weight: bold;
 }
 
 .right li a:hover {
-	background-color: #fff;
-	color: #002a4e;
-	border-radius: 3rem;
+  background-color: #fff;
+  color: #002a4e;
+  border-radius: 3rem;
 }
 
 .right .btn {
-	background-color: #3057bc;
-	border-radius: 2rem;
+  background-color: #3057bc;
+  border-radius: 2rem;
 }
