@@ -139,24 +139,18 @@ header {
 		padding: 3px;
 		letter-spacing: 1px;
 	}
-
-
 }
-
 
 /* Desktop screen  */
 
 @media screen and (min-width: 992px) {
-    .logo{
-        padding-left: 1rem;
-    }
-    .left{
-    
-    }
-    .left li a,
-    .right li a {
-        margin: 0 1rem;
-        font-size: 13.5px;
-        
-    }
+	.logo {
+		padding-left: 1rem;
+	}
+
+	.left li a,
+	.right li a {
+		margin: 0 1rem;
+		font-size: 13.5px;
+	}
 }
