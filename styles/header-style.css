@@ -147,8 +147,16 @@ header {
 /* Desktop screen  */
 
 @media screen and (min-width: 992px) {
+    .logo{
+        padding-left: 1rem;
+    }
+    .left{
+    
+    }
     .left li a,
     .right li a {
-        font-size: 13px;
+        margin: 0 1rem;
+        font-size: 13.5px;
+        
     }
 }
