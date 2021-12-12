@@ -27,7 +27,7 @@ ul * {
 	list-style: none;
 }
 
-/*  Mobile view  */
+/*  Mobile view from width: 360px   */
 
 header {
 	background-color: #002a4e;
@@ -139,6 +139,10 @@ header {
 		padding: 3px;
 		letter-spacing: 1px;
 	}
+
+    .right li a {
+        font-size: 12px;
+    }
 }
 
 /* Desktop screen  */
