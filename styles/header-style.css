@@ -133,6 +133,7 @@ header {
 		display: flex;
 		justify-content: start;
 		align-items: center;
+        padding-top: .7rem;
 	}
 
 	.left li a {
