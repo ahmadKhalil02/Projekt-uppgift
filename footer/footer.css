@@ -4,7 +4,6 @@
   font-family: sans-serif;
   list-style: none;
   font-size: 12px;
-  
 }
 
 footer {
@@ -13,35 +12,33 @@ footer {
   justify-content: space-between;
 }
 
-li
-{
+li {
   margin-bottom: 10px;
 }
 
-li:first-child{
+li:first-child {
   margin-bottom: 20px;
   font-size: 18px;
 }
 
-.footer-1 li:first-child{
+.footer-1 li:first-child {
   margin-bottom: 20px;
   font-size: 18px;
 }
 
-.footer-1 li:last-child{
+.footer-1 li:last-child {
   margin-top: 20px;
   font-size: 18px;
 }
 
-.footer-1 li{
+.footer-1 li {
   margin-bottom: 0px;
 }
 
-.vertcal-line{
+.vertcal-line {
   border-left: 3px solid #ffffff;
   height: 100px;
   margin-top: 30px;
-
 }
 
 /* unvisited  and visited link */
@@ -50,10 +47,9 @@ a:link a:visited {
   text-decoration: none;
 }
 
-
 /* mouse over link */
 a:hover {
-  color red;
+  color: red;
 }
 
 /* selected link */
@@ -65,11 +61,10 @@ ul {
   color: #ffffff;
 }
 
-.copy{
+.copy {
   display: flex;
   align-items: center;
   background: #002a4e;
-  color:#ffffff;
+  color: #ffffff;
   gap: 10px;
-
 }
