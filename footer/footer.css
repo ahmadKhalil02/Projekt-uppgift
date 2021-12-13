@@ -81,11 +81,6 @@ ul {
   color: #ffffff;
 }
 
-img {
-  height: 30px;
-  width: 30px;
-}
-
 .social-media-icons {
   display: flex;
   align-items: center;
