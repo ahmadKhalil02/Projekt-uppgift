@@ -3,70 +3,102 @@
   padding: 0;
   font-family: sans-serif;
   list-style: none;
-  font-size: 12px;
+  color: #fff;
+  box-sizing: border-box;
 }
 
 footer {
   background: #002a4e;
-  display: flex;
-  justify-content: space-between;
-  height: 180px;
+  /* height: 180px;  */
 }
 
-li {
-  margin-bottom: 10px;
+/* divs container  */
+.list-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
 }
 
-li:first-child {
+h4 {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+/* Divs with vertical line */
+.vertical-line{
+    padding-left: 2rem;
+    height: 130px;
+    border-left: 2px solid #fff;
+}
+
+.vertical-line ul li {
+    margin-top: .5rem;
+    font-size: 12px;
+}
+
+.contact .hitta {
+    margin-top: 1.5rem;
+    font-weight: bolder;
+    font-size: 15px;
+
+}
+
+
+/* li:first-child {
   margin-bottom: 20px;
   font-size: 18px;
-}
+} */
 
-.footer-1 {
+/* .footer-1 {
   width: 25%;
   margin-left: 3%;
   margin-top: 30px;
-}
+} */
 
-.footer-2,
+/* .footer-2,
 .footer-3 {
   width: 25%;
   margin-top: 30px;
-}
+} */
 
-.social-media-icons {
+/* .social-media-icons {
   width: 25%;
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  display: flex; 
+  align-items: center; 
+   gap: 15px;
   margin-top: 50px;
-  margin-right: 3%;
-}
+  margin-right: 3%; 
+
+} */
+
+
 
 .social-media {
-  margin-right: 3%;
+  /* margin-right: 3%;  */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.footer-1 li:first-child {
+.social-media li i {
+    font-size: 50px;
+    margin-right: .5rem;
+}
+
+/* .footer-1 li:first-child {
   margin-bottom: 20px;
   font-size: 18px;
-}
+} */
 
-.footer-1 li:last-child {
+/* .footer-1 li:last-child {
   margin-top: 20px;
   font-size: 18px;
-}
+} */
 
-.footer-1 li {
+/* .footer-1 li {
   margin-bottom: 0px;
 }
-
-.vertcal-line {
-  border-left: 3px solid #ffffff;
-  height: 100px;
-  margin-top: 70px;
-  margin-right: 1%;
-}
+ */
 
 /* unvisited  and visited link */
 a:link,
@@ -84,19 +116,22 @@ a:hover {
 a:active {
   color: #4c82b1;
 }
-
+/* 
 ul {
   color: #ffffff;
-}
+} */
 
 .copy {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   background: #002a4e;
   color: #ffffff;
   gap: 10px;
-  height: 40px;
+  height: 40px; */
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 13px;
 }
 
 @media all and (min-width: 769px) and (max-width: 800px) {
