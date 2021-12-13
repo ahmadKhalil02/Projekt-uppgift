@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+
+:root {
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box; /*allows us to add paddings and borders to stuff wo having to add to the width of an element*/
+    padding: 0; /*resetting default padding and margins on browser*/
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul { /*formatting list*/
+    list-style-type: none;
+}
+
+a { /*formatting links*/
+    text-decoration: none;
+    color: #333;
+}
+
+h1, 
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0; /*top and bottom 10, left and right 0*/
+}
+
+p {
+    margin: 10px 0; 
+}
+
+img {
+    width: 100%; /*takes up 100% of its container*/
+}
+
+_______________________________________________________________
+
+/*Medlem*/
+
+.medlem .grid {
+    grid-template-columns: 4fr 2fr;
+
+}
+
+/*Hitta*/
+
+.hitta .grid {
+    grid-template-columns: 2fr 4fr;
+
+}
+
+/*Utbud*/
+
+.utbud .grid {
+    grid-template-columns: 4fr 2fr;
+
+}
+
+/*Motivation*/
+.motivation {
+    padding-top: 100px;
+}
+
+.motivation-heading {
+    max-width: 500px;
+    margin: auto;
+}
+.motivation .grid h3 {
+    font-size: 35px;
+}
+
+.motivation .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+__________________________________________________________________
+
+/*Tablets and under */
+@media(max-width: 768px) {
+    .grid, 
+    .medlem .grid,
+    .hitta .grid,
+    .utbud .grid,
+    .motivation .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+}
+
+/*Mobile*/ /*
+@media(max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+} */
+
+__________________________________________________________________
+
+/*general - classes thats used all around the website*/
+
+.container {
+    max-width: 1100px; /* stop it from stretching entire screen width*/
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block; /*will be on buttons and links*/
+    padding: 10px 30px; 
+    cursor: pointer; 
+    background: var(--primary-color);
+    color: #fff; 
+    border: none; 
+    border-radius: 5px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+__________________________________________________________________
+
+/*Background and Colored buttons*/
+
+.bg-primary,
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+    color: #fff;
+}
+
+
+.bg-light,
+.btn-light {
+    background-color: var(--light-color);
+    color: #333;
+}
+
+________________________________________________________________
+
+/* Text sizes*/
+
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+__________________________________________________________________
+
+.flex {
+    display: flex; /* turns nav inte a flex column*/
+    justify-content: center; /*takes remaining space and puts it between flex items*/
+    align-content: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    height: 100%; /*puts content in middle of body heightwise*/
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*Margin*/
+
+.my-1 {
+    margin: 1rem 0; /*rem = mutliplier of the root element's font size. default here is 16px. so 1rem = 16 x 1 */
+}
+
+.my-2 {
+    margin: 1.5rem 0; 
+}
+
+.my-3 {
+    margin: 2rem 0; 
+}
+
+.my-4 {
+    margin: 3rem 0; 
+}
+
+.my-5 {
+    margin: 4rem 0; 
+}
+
+.m-1 {
+    margin: 1rem; /*rem = mutliplier of the root element's font size. default here is 16px. so 1rem = 16 x 1 */
+}
+
+.m-2 {
+    margin: 1.5rem; 
+}
+
+.m-3 {
+    margin: 2rem; 
+}
+
+.m-4 {
+    margin: 3rem; 
+}
+
+.m-5 {
+    margin: 4rem; 
+}
+
+/*Padding*/
+
+.py-1 {
+    padding: 1rem 0; /*rem = mutliplier of the root element's font size. default here is 16px. so 1rem = 16 x 1 */
+}
+
+.py-2 {
+    padding: 1.5rem 0; 
+}
+
+.py-3 {
+    padding: 2rem 0; 
+}
+
+.py-4 {
+    padding: 3rem 0; 
+}
+
+.py-5 {
+    padding: 4rem 0; 
+}
+
+.p-1 {
+    padding: 1rem; /*rem = mutliplier of the root element's font size. default here is 16px. so 1rem = 16 x 1 */
+}
+
+.p-2 {
+    padding: 1.5rem; 
+}
+
+.p-3 {
+    padding: 2rem; 
+}
+
+.p-4 {
+    padding: 3rem; 
+}
+
+.p-5 {
+    padding: 4rem; 
+}
