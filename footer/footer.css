@@ -29,14 +29,22 @@ li:first-child {
 }
 
 .footer-2,
-.footer-3,
-.social-media-icons {
+.footer-3 {
   width: 25%;
   margin-top: 30px;
 }
 
 .social-media-icons {
   width: 25%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+  margin-right: 3%;
+}
+
+.social-media {
+  margin-right: 3%;
 }
 
 .footer-1 li:first-child {
@@ -69,22 +77,16 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: red;
+  color: #4c82b1;
 }
 
 /* selected link */
 a:active {
-  color: blue;
+  color: #4c82b1;
 }
 
 ul {
   color: #ffffff;
-}
-
-.social-media-icons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
 }
 
 .copy {
@@ -95,4 +97,24 @@ ul {
   color: #ffffff;
   gap: 10px;
   height: 40px;
+}
+
+@media all and (min-width: 769px) and (max-width: 800px) {
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 481px) and (max-width: 568px) {
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  /* put your css styles in here */
+}
+
+@media all and (min-width: 0px) and (max-width: 320px) {
+  /* put your css styles in here */
 }
