@@ -1,47 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
-
-
-:root {
-    --primary-color: #efefef;
-    --secondary-color: #2F57BC;
-    --dark-color: #002A4E;
-    --light-color: #fff;
-}
-
 * {
-    box-sizing: border-box; /*allows us to add paddings and borders to stuff wo having to add to the width of an element*/
-    padding: 0; /*resetting default padding and margins on browser*/
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-body {
-    font-family: "Lato", sans-serif;
-    color: #333;
-    line-height: 1.6;
-}
+.item1 { grid-area: bild1; }
+.item2 { grid-area: medlem; }
+.item3 { grid-area: hitta; }
+.item4 { grid-area: bild2; }
+.item5 { grid-area: bild3; }
+.item6 { grid-area: utbud; }
+.item7 { grid-area: motivation; }
+.nested { grid-area: nested; }
+.item9 { grid-area: inspireras; }
+.item10 { grid-area: pt; }
+.item11 { grid-area: klasser; }
+.item12 { grid-area: jobba; }
 
-ul { /*formatting list*/
-    list-style-type: none;
-}
+.container {
+display: grid;
+grid-template-areas: 
+	'bild1 bild1 bild1 bild1 medlem medlem'
+    'hitta hitta hitta hitta bild2 bild2'
+    'bild3 bild3 bild3 bild3 utbud utbud';
+grid-gap: 1px;
+background-color: #efefef;
+} 
 
-a { /*formatting links*/
-    text-decoration: none;
-    color: #333;
-}
-
-h1, 
-h2 {
-    font-weight: 300;
-    line-height: 1.2;
-    margin: 10px 0; /*top and bottom 10, left and right 0*/
-}
-
-p { 
-    margin: 10px 0;
-}
-
-img {
-    width: 100%; /*takes up 100% of its container*/
+.container > div {
+  background-color: #efefef;
+  text-align: center;
+  padding: 0;
+  font-size: 30px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -51,6 +46,11 @@ img {
     display: grid;
     grid-template-columns: 4fr 2fr;
 
+.container2 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
 .medlem .grid .text{
@@ -64,29 +64,25 @@ img {
 
 }
 
-/*Utbud*/
+.nested > div {
+border: #fff 1px solid;
+padding: 1em;
+} 
 
-.utbud .grid {
-    grid-template-columns: 4fr 2fr;
+.container3 {
+display: grid;
+grid-template-areas: 
+	'jobba jobba jobba jobba jobba jobba';
+grid-gap: 1px;
+background-color: #002a4e;
+padding: 0;
+} 
 
-}
-
-/*Motivation*/
-.motivation {
-    padding-top: 60px;
-}
-
-.motivation-heading {
-    max-width: 1100px;
-    margin: auto;
-}
-.motivation .grid h3 {
-    font-size: 30px;
-}
-
-.motivation .grid p {
-    font-size: 20px;
-    font-weight: 200;
+.container3 > div {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 0;
+  font-size: 30px;
 }
 
 /*Jobba*/
@@ -107,7 +103,7 @@ img {
 .jobba .grid p {
     font-size: 20px;
     font-weight: 200;
-} */
+} 
 
 
 /*Tablets and under */
@@ -124,207 +120,70 @@ img {
 
 }
 
-/*Mobile*/ 
-
-__________________________________________________________________
-
-/*general - classes thats used all around the website*/
-
-.container {
-    max-width: 1100px; /* stop it from stretching entire screen width*/
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
+.text2 {
+font-size: 14px;
 }
 
 .btn {
-    display: inline-block; /*will be on buttons and links*/
-    padding: 10px 30px; 
-    cursor: pointer; 
-    background: var(--primary-color);
-    color: #fff; 
-    border: none; 
-    border-radius: 5px;
-}
-
-.btn-outline {
-    background-color: transparent;
-    border: 1px #fff solid;
+background-color: #3057bc;
+border: none;
+color: white;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 10px;
+font-weight: bold;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 3em;
 }
 
 .btn:hover {
-    transform: scale(0.98);
+background-color: #fff;
+color: #002a4e;
 }
 
-__________________________________________________________________
-
-/*Background and Colored buttons*/
-
-.bg-primary,
-.btn-primary {
-    background-color: var(--primary-color);
-    color: #fff;
+.item12 {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-.bg-secondary,
-.btn-secondary {
-    background-color: var(--secondary-color);
-    color: #fff;
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.bg-dark,
-.btn-dark {
-    background-color: var(--dark-color);
-    color: #fff;
+.fa-dumbbell,
+.fa-running, 
+.fa-project-diagram {
+  color: #002a4e;
 }
 
-.bg-primary a,
-.btn-primary a,
-.bg-secondary a,
-.btn-secondary a,
-.bg-dark a,
-.btn-dark a {
-    color: #fff;
+/*tablets*/
+@media (max-width: 960px) { 
+
 }
 
+/*mobiles*/
+@media (max-width: 768px) {
 
-.bg-light,
-.btn-light {
-    background-color: var(--light-color);
-    color: #333;
-}
+	.container {
+    grid-template-areas: 
+	'bild1'
+    'medlem'
+    'bild2'
+    'hitta'
+    'bild3'
+    'utbud';
+    }
 
-________________________________________________________________
-
-/* Text sizes*/
-
-.lead {
-    font-size: 20px;
-}
-
-.sm {
-    font-size: 1rem;
-}
-
-.md {
-    font-size: 2rem;
-}
-
-.lg {
-    font-size: 3rem;
-}
-
-.xl {
-    font-size: 4rem;
-}
-
-.text-center {
-    text-align: center;
-}
-
-__________________________________________________________________
-
-.flex {
-    display: flex; /* turns nav inte a flex column*/
-    justify-content: center; /*takes remaining space and puts it between flex items*/
-    align-content: center;
-    height: 100%;
-}
-
-.grid {
-    display: grid; 
-    grid-template-columns: 4fr 2fr; 
-    justify-content: center;
-    align-items: center;
-    height: 100%; /*puts content in middle of body heightwise*/
-}
-
-.grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-____________________________________________________________________
-
-/*Margin*/
-
-.my-1 {
-    margin: 1rem 0; /*rem = mutliplier of the root element's font size. default here is 16px. so 1rem = 16 x 1 */
-}
-
-.my-2 {
-    margin: 0; 
-}
-
-.my-3 {
-    margin: 2rem 0; 
-}
-
-.my-4 {
-    margin: 3rem 0; 
-}
-
-.my-5 {
-    margin: 4rem 0; 
-}
-
-.m-1 {
-    margin: 1rem; /*rem = mutliplier of the root element's font size. default here is 16px. so 1rem = 16 x 1 */
-}
-
-.m-2 {
-    margin: 1.5rem; 
-}
-
-.m-3 {
-    margin: 2rem; 
-}
-
-.m-4 {
-    margin: 3rem; 
-}
-
-.m-5 {
-    margin: 4rem; 
-}
-
-/*Padding*/
-
-.py-1 {
-    padding: 1rem 0; /*rem = mutliplier of the root element's font size. default here is 16px. so 1rem = 16 x 1 */
-}
-
-.py-2 {
-    padding: 0; 
-}
-
-.py-3 {
-    padding: 2rem 0; 
-}
-
-.py-4 {
-    padding: 3rem 0; 
-}
-
-.py-5 {
-    padding: 4rem 0; 
-}
-
-.p-1 {
-    padding: 1rem; /*rem = mutliplier of the root element's font size. default here is 16px. so 1rem = 16 x 1 */
-}
-
-.p-2 {
-    padding: 1.5rem; 
-}
-
-.p-3 {
-    padding: 2rem; 
-}
-
-.p-4 {
-    padding: 3rem; 
-}
-
-.p-5 {
-    padding: 4rem; 
+	.nested {
+    grid-template-areas: 
+	'inspireras'
+    'pt'
+    'klasser';}
 }
