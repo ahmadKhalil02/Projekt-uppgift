@@ -44,13 +44,17 @@ img {
     width: 100%; /*takes up 100% of its container*/
 }
 
-_______________________________________________________________
 
 /*Medlem*/
 
 .medlem .grid {
+    display: grid;
     grid-template-columns: 4fr 2fr;
 
+}
+
+.medlem .grid .text{
+    padding: .5rem;
 }
 
 /*Hitta*/
@@ -87,14 +91,14 @@ _______________________________________________________________
 
 /*Jobba*/
 .jobba {
-    padding-top: 60px;
+    padding: 60px;
     background-color: #2F57BC;
     color: #fff;
 }
 
-.jobba-heading {
+ .jobba-heading {
     max-width: 1100px;
-    margin: auto;
+    margin-top: 3rem ;
 }
 .jobba .grid h3 {
     font-size: 30px;
@@ -103,17 +107,17 @@ _______________________________________________________________
 .jobba .grid p {
     font-size: 20px;
     font-weight: 200;
-}
+} */
 
-__________________________________________________________________
 
 /*Tablets and under */
-@media (max-width: 768px) {
+@media  (max-width: 768px) {
     .grid, 
     .medlem .grid,
     .hitta .grid,
     .utbud .grid,
-    .motivation .grid {
+    .motivation ,
+    .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
