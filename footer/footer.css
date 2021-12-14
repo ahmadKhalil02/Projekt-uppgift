@@ -13,36 +13,34 @@ footer {
 }
 
 /* divs container  */
-.list-container{
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
 }
 
 h4 {
-    margin-top: .5rem;
-    margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Divs with vertical line */
-.vertical-line{
-    padding-left: 2rem;
-    height: 130px;
-    border-left: 2px solid #fff;
+.vertical-line {
+  padding-left: 2rem;
+  height: 130px;
+  border-left: 2px solid #fff;
 }
 
 .vertical-line ul li {
-    margin-top: .5rem;
-    font-size: 12px;
+  margin-top: 0.5rem;
+  font-size: 12px;
 }
 
 .contact .hitta {
-    margin-top: 1.5rem;
-    font-weight: bolder;
-    font-size: 15px;
-
+  margin-top: 1.5rem;
+  font-weight: bolder;
+  font-size: 15px;
 }
-
 
 /* li:first-child {
   margin-bottom: 20px;
@@ -71,8 +69,6 @@ h4 {
 
 } */
 
-
-
 .social-media {
   /* margin-right: 3%;  */
   display: flex;
@@ -81,8 +77,8 @@ h4 {
 }
 
 .social-media li i {
-    font-size: 50px;
-    margin-right: .5rem;
+  font-size: 50px;
+  margin-right: 0.5rem;
 }
 
 /* .footer-1 li:first-child {
@@ -134,22 +130,18 @@ ul {
   font-size: 13px;
 }
 
-@media all and (min-width: 769px) and (max-width: 800px) {
-  /* put your css styles in here */
-}
-
-@media all and (min-width: 569px) and (max-width: 768px) {
-  /* put your css styles in here */
-}
-
-@media all and (min-width: 481px) and (max-width: 568px) {
-  /* put your css styles in here */
-}
-
 @media all and (min-width: 321px) and (max-width: 480px) {
   /* put your css styles in here */
-}
 
-@media all and (min-width: 0px) and (max-width: 320px) {
-  /* put your css styles in here */
+  .list-container {
+    display: block;
+  }
+
+  .follow {
+    margin-top: 3rem;
+  }
+
+  .social-media {
+    justify-content: left;
+  }
 }
