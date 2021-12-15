@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="./styles/header-style.css" />
+    <link rel="stylesheet" href="./styles/login-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="pictures/loggavit.png" style="height: 60px; width: 60px" />
+        </a>
+
+        <ul class="left">
+            <li><a href=""> UTBUD </a></li>
+            <li><a href="#"> OM OSS </a></li>
+            <li><a href="#"> HITTA HIT</a></li>
+            <li><a href="#"> KONTAKT </a></li>
+        </ul>
+
+        <ul class="right">
+            <li><a class="btn" href="#"> BLI MEDLEM </a></li>
+            <li><a href="#" class="login"> LOGGA IN </a></li>
+        </ul>
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+
+    <form action="/action_page.php" method="post">
+        <div class="imgcontainer">
+            <img src="https://gymogturn.no/wp-content/uploads/2020/02/Gymx-logo-riktig-str..jpg" alt="Avatar"
+                class="avatar">
+        </div>
+
+        <div class="container">
+            <input type="text" placeholder="E-postadress*" name="uname" required>
+
+            <input type="password" placeholder="Lösenord*" name="psw" required>
+            <label><input type="checkbox" checked="checked" name="remember">Håll mig inloggad</label>
+
+            <button type="submit">Login</button>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+            <span class="signup"><a href="#">Har inget konto än? Bli medlem här</a></span>
+        </div>
+
+        <div class="container2">
+            <!-- <button type="button" class="google">Logga in med Google</button>
+        <button type="button" class="facebook">Logga in med Facebook</button> -->
+            <p>Logga in via: </p>
+
+            <a href="" class="facebook">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a> <br />
+
+            <a href="" class="google">
+                <i class="fab fa-google" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </form>
+
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+
+
+    <!-- FOOTER END -->
+
+</body>
+
+</html>
