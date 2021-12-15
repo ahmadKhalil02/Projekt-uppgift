@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+footer {
+  background: #002a4e;
+  /* height: 180px;  */
+}
+
+/* divs container  */
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Divs with vertical line */
+.vertical-line {
+  padding-left: 2rem;
+  height: 130px;
+  border-left: 2px solid #fff;
+}
+
+.vertical-line ul li {
+  margin-top: 0.5rem;
+  font-size: 12px;
+}
+
+.contact .hitta {
+  margin-top: 1.5rem;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+/* li:first-child {
+  margin-bottom: 20px;
+  font-size: 18px;
+} */
+
+/* .footer-1 {
+  width: 25%;
+  margin-left: 3%;
+  margin-top: 30px;
+} */
+
+/* .footer-2,
+.footer-3 {
+  width: 25%;
+  margin-top: 30px;
+} */
+
+/* .social-media-icons {
+  width: 25%;
+  display: flex; 
+  align-items: center; 
+   gap: 15px;
+  margin-top: 50px;
+  margin-right: 3%; 
+
+} */
+
+.social-media {
+  /* margin-right: 3%;  */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.social-media li i {
+  font-size: 50px;
+  margin-right: 0.5rem;
+}
+
+/* .footer-1 li:first-child {
+  margin-bottom: 20px;
+  font-size: 18px;
+} */
+
+/* .footer-1 li:last-child {
+  margin-top: 20px;
+  font-size: 18px;
+} */
+
+/* .footer-1 li {
+  margin-bottom: 0px;
+}
+ */
+
+/* unvisited  and visited link */
+a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #4c82b1;
+}
+
+/* selected link */
+a:active {
+  color: #4c82b1;
+}
+/* 
+ul {
+  color: #ffffff;
+} */
+
+.copy {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #002a4e;
+  color: #ffffff;
+  gap: 10px;
+  height: 40px; */
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 13px;
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  /* put your css styles in here */
+
+  .list-container {
+    display: block;
+  }
+
+  .follow {
+    margin-top: 3rem;
+  }
+
+  .social-media {
+    justify-content: left;
+  }
+
+  .social-media li i {
+    font-size: 30px;
+  }
+}
