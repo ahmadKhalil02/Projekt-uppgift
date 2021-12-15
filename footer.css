@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+footer {
+  background: #002a4e;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+/* divs container  */
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Divs with vertical line */
+.vertical-line {
+  padding-left: 2rem;
+  height: 130px;
+  border-left: 2px solid #fff;
+}
+
+.vertical-line ul li {
+  margin-top: 0.5rem;
+  font-size: 12px;
+}
+
+.contact .hitta {
+  margin-top: 1.5rem;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.social-media li i {
+  font-size: 50px;
+  margin-right: 0.5rem;
+}
+
+
+/* unvisited  and visited link */
+a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #4c82b1;
+}
+
+/* selected link */
+a:active {
+  color: #4c82b1;
+}
+/* 
+ul {
+  color: #ffffff;
+} */
+
+.copy {
+
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 13px;
+}
+
+@media all and (min-width: 321px) and (max-width: 580px) {
+  /* put your css styles in here */
+
+  .list-container {
+    display: block;
+  }
+
+  .follow {
+    margin-top: 3rem;
+  }
+
+  .social-media {
+    justify-content: left;
+  }
+  .social-media li i {
+    font-size: 30px;
+  }
+}
