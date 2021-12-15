@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+.header-img {
+  width: 100%;
+}
+
+.container-headerimg {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.utbud-text {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.utbud-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.appinfo {
+  background-color: #002a4e;
+}
+
+img {
+  width: 300px;
+}
+
+.app-container {
+  display: flex;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.app-container img {
+  width: 500px;
+}
+
+.appinfo {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.appinfo ul li {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 4px;
+}
+
+/* MOBILE  */
+@media all and (min-width: 321px) and (max-width: 480px) {
+  /* put your css styles in here */
+
+  .utbud-container,
+  .app-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    text-align: center;
+  }
+  .app-container img {
+    width: 100%;
+  }
+
+  .appinfo {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .header-img,
+  .utbud-text {
+    display: none;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 900px) {
+  /* put your css styles in here */
+  .utbud-container {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    text-align: center;
+  }
+  img {
+    width: 200px;
+  }
+  .app-container img {
+    width: 400px;
+  }
+
+  .appinfo {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    font-size: 12px;
+  }
+}
