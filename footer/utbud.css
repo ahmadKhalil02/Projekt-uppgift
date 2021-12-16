@@ -82,6 +82,22 @@ h6 {
     "utbud4 utbud5 utbud6";
 }
 
+.img-container a {
+  position: relative;
+}
+
+/* TEXT POSITIONING */
+
+.img-container a h2 {
+  position: absolute;
+  z-index: 100;
+  color: #ffffff;
+  background-color: rgba(20, 42, 77, 0.8);
+  padding-left: 20px;
+  width: 300px;
+  bottom: 20px;
+}
+
 .utbud-1,
 .utbud-2,
 .utbud-3,
