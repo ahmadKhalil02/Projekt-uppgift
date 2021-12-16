@@ -2,9 +2,8 @@ main * {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	list-style: none;
 	box-sizing: border-box;
-	overflow-x: hidden;
+	 overflow-x: hidden; 
 }
 
 .item1 {
@@ -52,8 +51,6 @@ main * {
 		'bild1  medlem'
 		'hitta bild2'
 		'bild3 utbud';
-	/* grid-gap: 1px;
-	background-color: #efefef; */
 }
 
 .item1,
@@ -67,9 +64,7 @@ main * {
 .hitta,
 .utbud {
 	background-color: #efefef;
-	/* text-align: center; */
 	padding: 1rem;
-	font-size: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -86,9 +81,8 @@ main * {
 .medlem .text,
 .hitta .text,
 .utbud .text {
-	padding: 10px;
+	padding: 0 1rem;
 	font-size: 1.1rem;
-	width: 500px;
 	margin: 1rem 0;
 }
 
@@ -100,20 +94,8 @@ main * {
 .container2 {
 	height: 700px;
 	background-color: #fff;
-	/* display: grid;
-	grid-template-areas:
-		'motivation motivation motivation motivation motivation motivation'
-		'nested nested nested nested nested nested';
-	grid-gap: 1px; 
-	*/
-}
 
-/* .container2 > .text {
-	background-color: rgba(255, 255, 255, 0.8);
-	text-align: center;
-	padding: 20px 0;
-	font-size: 30px; 
-} */
+}
 
 .container2 .heading {
 	text-align: center;
@@ -122,8 +104,6 @@ main * {
 	margin-top: 6rem;
 }
 .nested {
-	/* display: grid;
-	grid-template-areas: 'inspireras inspireras pt pt klasser klasser'; */
 	display: flex;
 	justify-content: space-around;
 	padding: 5px;
@@ -131,8 +111,6 @@ main * {
 }
 
 .nested > div {
-	/* border: #fff 1px solid;
-	padding: 5px 50px 20px; */
 	text-align: center;
 	width: 400px;
 }
@@ -144,70 +122,27 @@ main * {
 }
 
 .nested .text2 {
-	width: 300px;
 	padding: 10px;
 	margin: 0 auto;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .nested i {
-	font-size: 10rem;
+	font-size: 8rem;
 	margin-bottom: 1rem;
 	color: #002a4e;
 }
 
-/*Jobba*/
-.container3 {
-    margin-bottom: 0;
-	/* 
-   === Not using ===
 
-    display: grid;
-	grid-template-areas: 'jobba jobba jobba jobba jobba jobba';
-	grid-gap: 1px;
-	background-color: #002a4e;
-	padding: 0; */
-}
-/*  
-
-== Little effect ==
-
-.container3 > div {
-	background-color: rgba(255, 255, 255, 0.5);
-	text-align: center;
-	padding: 0;
-	font-size: 30px;
-}
-
-
-===== Does not exist on the html ====
-
-.jobba {
-	padding: 60px;
-	background-color: #2f57bc;
-	color: #fff;
-}
-
-.jobba-heading {
-	max-width: 1100px;
-	margin-top: 3rem;
-}
-.jobba .grid h3 {
-	font-size: 30px;
-} */
 
 .btn {
 	background-color: #3057bc;
-	/* border: none; */
 	color: white;
 	padding: 10px;
 	width: 200px;
-	/* text-align: center; */
 	text-decoration: none;
-	/* display: inline-block; */
 	font-size: 14px;
 	font-weight: bold;
-	/* margin: 4px 2px; */
 	cursor: pointer;
 	border-radius: 3em;
 }
@@ -219,7 +154,7 @@ main * {
 
 .item12 {
 	position: relative;
-    height: 800px;
+    height: 900px;
     overflow: hidden;
     margin-bottom: -.25rem;
 }
@@ -253,7 +188,14 @@ main * {
 }
 
 /*tablets*/
-@media (max-width: 960px) {
+@media (min-width: 1120px) {
+.hitta .text {
+    width: 500px;
+}
+
+.nested .text2 {
+    width: 300px;
+}
 }
 
 /*mobiles*/
@@ -274,7 +216,7 @@ main * {
 	.item1,
 	.item4,
 	.item5 {
-		height: 600px;
+		height: auto;
 	}
 
 	.medlem,
@@ -282,6 +224,7 @@ main * {
 	.utbud {
 		height: 500px;
 		padding: 3rem 0;
+        margin-top: -5px;
 	}
 
 	.container2 {
@@ -310,6 +253,11 @@ main * {
 		font-size: 5rem;
 	}
 
+    .centered {
+        width: 80%;
+        padding: 15px;
+    }
+
 	.centered .title2 {
 		font-size: 3rem;
 	}
@@ -318,22 +266,10 @@ main * {
 		padding: 0 2rem;
 		font-size: 15px;
 	}
-
-	/*     
-	.item2,
-	.item3,
-	.item6 {
-		display: block;
-		height: 200px;
-	} */
 }
 
 @media (max-width: 580px) {
-	.item1,
-	.item4,
-	.item5 {
-		height: auto;
-	}
+	
 
 	.medlem,
 	.hitta,
@@ -346,10 +282,7 @@ main * {
         height: 500px;
 	}
 
-    .centered {
-        width: 80%;
-        padding: 15px;
-    }
+ 
 
 	.medlem .heading,
 	.hitta .heading,

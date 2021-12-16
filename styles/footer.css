@@ -1,11 +1,10 @@
-/* * {
+footer * {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   list-style: none;
-  color: #fff;
   box-sizing: border-box;
-} */
+}
 
 footer {
   background: #002a4e;
@@ -41,10 +40,12 @@ h4 {
   font-size: 12px;
 }
 
-.contact .hitta {
+.contact .hitta-gym  {
   margin-top: 1.5rem;
   font-weight: bolder;
   font-size: 15px;
+  background-color: none;
+  color: #fff;
 }
 
 
@@ -53,6 +54,11 @@ h4 {
   justify-content: center;
   align-items: flex-start;
 }
+
+.follow {
+    margin-bottom: 1rem;
+}
+
 
 .social-media li i {
   font-size: 50px;
@@ -88,7 +94,7 @@ ul {
   font-size: 13px;
 }
 
-@media all and (min-width: 321px) and (max-width: 580px) {
+@media all and (min-width: 321px) and (max-width: 767px) {
   /* put your css styles in here */
 
   .list-container {
@@ -102,7 +108,12 @@ ul {
   .social-media {
     justify-content: left;
   }
+
   .social-media li i {
     font-size: 30px;
+  }
+
+  .copy{
+      margin-top: -20px;
   }
 }
