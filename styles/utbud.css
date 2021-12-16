@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* GRID AREA NAMES */
+.header-img {
+  grid-area: header-img;
+  width: 100%;
+  z-index: -1;
+}
+
+.utbud-1 {
+  grid-area: utbud1;
+  width: 300px;
+}
+
+.utbud-2 {
+  grid-area: utbud2;
+  width: 300px;
+}
+
+.utbud-3 {
+  grid-area: utbud3;
+  width: 300px;
+}
+
+.utbud-4 {
+  grid-area: utbud4;
+  width: 300px;
+}
+
+.utbud-5 {
+  grid-area: utbud5;
+  width: 300px;
+}
+
+.utbud-6 {
+  grid-area: utbud6;
+  width: 300px;
+}
+
+/* GRID AREA NAMES UTBUD TEXT */
+
+/* STANDARD SETTINGS FOR SCREEN */
+
+/* HEADER PART */
+.utbud-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header-img";
+  position: relative;
+}
+
+.header-text {
+  z-index: 100;
+  position: absolute;
+  color: #ffffff;
+  font-size: 16px;
+  right: 3rem;
+  top: 5rem;
+}
+h6 {
+  font-size: 25px;
+  line-height: 3rem;
+}
+
+/* IMAGE PART */
+.img-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem;
+  grid-template-areas:
+    "utbud1 utbud2 utbud3"
+    "utbud4 utbud5 utbud6";
+}
+
+.img-container a {
+  position: relative;
+}
+
+/* TEXT POSITIONING */
+
+.img-container a h2 {
+  position: absolute;
+  z-index: 100;
+  color: #ffffff;
+  background-color: rgba(20, 42, 77, 0.8);
+  padding-left: 20px;
+  width: 300px;
+  bottom: 20px;
+}
+
+.utbud-1,
+.utbud-2,
+.utbud-3,
+.utbud-4,
+.utbud-5,
+.utbud-6 {
+  justify-items: center;
+  align-items: center;
+}
+/* APP INFO */
+
+.app-container {
+  display: flex;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.app-container img {
+  width: 500px;
+}
+
+.appinfo {
+  background-color: #002a4e;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.appinfo ul li {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 4px;
+}
+
+h2 {
+  line-height: 4rem;
+}
+
+/* MOBILE  */
+@media all and (min-width: 321px) and (max-width: 480px) {
+  /* put your css styles in here */
+
+  .img-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "utbud1"
+      "utbud2"
+      "utbud3"
+      "utbud4"
+      "utbud5";
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    text-align: center; */
+  }
+  .app-container {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+  .app-container img {
+    width: 100%;
+  }
+
+  h2 {
+    line-height: 3rem;
+  }
+
+  .appinfo {
+    width: 100%;
+    height: 300px;
+    padding: 2rem;
+  }
+
+  .header-img,
+  h6,
+  .utbud-container p {
+    display: none;
+  }
+}
+
+/* TABLET  */
+
+@media all and (min-width: 480px) and (max-width: 1024px) {
+  /* put your css styles in here */
+
+  .img-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "utbud1 utbud2"
+      "utbud3 utbud4"
+      "utbud5 utbud6";
+  }
+
+  .utbud-1,
+  .utbud-2,
+  .utbud-3,
+  .utbud-4,
+  .utbud-5,
+  .utbud-6 {
+    align-items: center;
+    justify-items: center;
+  }
+
+  .app-container img {
+    width: 400px;
+  }
+
+  .appinfo {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    font-size: 12px;
+  }
+  .header-img,
+  h6,
+  .utbud-container p {
+    display: none;
+  }
+}
