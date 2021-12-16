@@ -52,6 +52,7 @@ main * {
     "bild1  medlem"
     "hitta bild2"
     "bild3 utbud";
+
 }
 
 .item1,
@@ -96,6 +97,7 @@ main * {
 .container2 {
   height: 700px;
   background-color: #fff;
+
 }
 
 .container2 .heading {
@@ -150,6 +152,9 @@ main * {
   background-color: #fff;
   color: #002a4e;
 }
+.btn:hover a {
+    color: #002a4e;
+  }
 
 .item12 {
   position: relative;
