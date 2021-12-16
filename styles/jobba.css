@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	letter-spacing: 0.5px;
+}
+
+.contain2 {
+grid-area: contain2;
+padding: 2rem;
+text-align: center;
+}
+
+.headz1,
+.headz2 {
+    margin: 3rem 0;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.contain3,
+.contain6 {
+padding: 1rem;
+display: flex;
+justify-content: space-around;
+margin: 1rem 0;
+}
+
+.contain3 > div,
+.contain6 > div {
+text-align: center;
+}
+
+.labelz {
+font-weight: bolder;
+font-size: 1.7rem;
+margin: 0.5rem 0;
+}
+
+.contain3 i {
+font-size: 10rem;
+margin-bottom: 1rem;
+color: #002a4e;
+}
+
+.avd {
+height: 200px;
+weight: 200px; 
+border-radius: 50%;
+}
+
+.contain4 {
+grid-area: contain4;
+padding: 2rem;
+display: flex;
+justify-content: center;
+}
+
+.ledigt,
+.avdelning {border-radius: 3rem;
+width: 50%;
+background-color: #3057bc;
+color: #fff;
+padding: 1rem;
+}
+
+.ledigt:hover,
+.avdelning:hover {
+background-color: #fff;
+color: #002a4e;
+border: 1px solid black;
+}
+
+.contain5 {
+grid-area: contain5;
+padding: 2rem;
+text-align: center;
+}
+
+.contain7 {
+grid-area: contain7;
+padding: 2rem;
+display: flex;
+justify-content: center;
+}
+
+.jobb {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #000;
+    display: grid;
+    grid-template-rows: repeat (7, 1fr);
+    grid-template-areas: 
+        'contain1'
+        'contain2'
+        'contain3'
+        'contain4'
+        'contain5'
+        'contain6'
+        'contain7'; 
+}
+
+.bild {
+grid-area: bild;
+width: 100%;
+}
+
+.contain1 {
+display: grid;
+width: 100%;
+grid-template-columns: 1fr;
+grid-template-areas: "bild";
+position: relative;
+}
+
+.knapp {
+position: absolute;
+top: 50%;
+left: 80%;
+width: 30%;
+transform: translate(-50%, -50%);
+background-color: #3057bc;
+border: none;
+color: white;
+padding: 12px;
+cursor: pointer;
+border-radius: 3em;
+}
+
+.knapp:hover {
+background-color: #fff;
+color: #002a4e;
+}
+
+@media (max-width: 768px) {
+.contain3,
+.contain6 {
+    flex-direction: column;
+}
+
+.contain3 > div,
+.contain6 >div {
+    margin: 3rem;
+}
+
+.
+
+}
+
+
+
+
+
+
+

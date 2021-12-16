@@ -1,3 +1,15 @@
+/* 
+============ WHAT I DID ==================
+
+- Wrote css for mobile, Ipad and desktop view
+- Changed the vertical line to a horizontal line 
+with a little animation.. I thought it was a 
+little bit more subtle. If you dont like it, the old code
+can still be found on Github
+- Created directory for styles
+- Changed directory 'loggan' to 'pictures'
+so that we can store there others pictures too
+*/
 
 *,
 *::before,
