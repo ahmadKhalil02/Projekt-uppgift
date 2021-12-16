@@ -47,7 +47,8 @@ main * {
 .om-gymx,
 .ledningsgrupp {
 	padding: 2rem;
-    margin: 2rem 0;
+    margin: auto;
+	width: 90%;
 }
 
 .om-gymx .titel1 {
