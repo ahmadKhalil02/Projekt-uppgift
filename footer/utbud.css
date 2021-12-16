@@ -73,7 +73,7 @@ h6 {
 /* IMAGE PART */
 .img-container {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin: 2rem;
@@ -214,5 +214,16 @@ h2 {
   h6,
   .utbud-container p {
     display: none;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .utbud-1,
+  .utbud-2,
+  .utbud-3,
+  .utbud-4,
+  .utbud-5,
+  .utbud-6 {
+    width: 400px;
   }
 }
